@@ -1,15 +1,71 @@
-* {
+/*
+** A Totally Real Project by a total "Software Engineer"
+@ author - ngala21
+**
+*/
+/* ===== Fonts ===== */
 
+/* ===== CSS Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 :root {
+    --color-primary: ;
+    --color-secondary: ;
+    --color-success: ;
 
+    --container-width-lg: ;
+    --container-width-md: ;
+    --container-width-sm: ;
+
+    --transition: ;
+    --border-radius-default: ;
+    --border-radius-large: ;
+}
+
+/* ===== General Styles ===== */
+
+/* ===== General Styles ===== */
+
+/* ================ SITE NAVIGATION ================ */
+header {
+    height: 6rem;
+    background-color: maroon;
+    
 }
 
 nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+nav img {
+    height: 
+}
 
+nav ul li {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li a {
+    color: white;
+}
+
+/* ================ SITE NAVIGATION ================ */
+main {
+    margin-top: 2rem;
+    height:75vh;
 }
 
 footer {
-    
+    background-color: maroon;
+    color: white;
+    height: 6rem;
 }
