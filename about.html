@@ -1,31 +1,102 @@
+<!-- Website Designed for Chania High School By Chanerian (Alumni) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chania High School</title>
+
+    <!-- Root CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <nav>
-    <div>
-        <img src="images/chania high school logo.jpg" alt="Chania High School Logo">
-    </div>
-    <ul>
-        <li><a href="http://">Home</a></li>
-        <li><a href="http://">About</a></li>
-        <li><a href="http://">Admission</a></li>
-        <li><a href="http://">Contact</a></li>
-        <li><a href="http://">Alumnis</a></li>
-    </ul>
-  </nav>  
+    <!-- ========== SITE NAVIGATION =========== -->
+    <nav>
+        <div class="nav-logo">
+            <img src="assets/logo.jpg" alt="Chania High School Logo">
+            <a href="index.html"><h1>Chanerians</h1></a>    
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="http://">Admission</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="alumnis.html">Alumnis</a></li>
+        </ul>
+    </nav>  
+    <!-- ========== SITE NAVIGATION =========== -->   
 
   <main>
+    <section>
+        <div class="container">
+            <h1>About Chania High School</h1>
+            <p>A legacy of excellence spanning over five decades, shaping the leaders of tomorrow.</p>
+        </div>
+
+        <div class="values">
+            <div>
+                <!-- icon -->
+                 <h3>Our Mission</h3>
+                 <p>to be a leading institution in academic excellence and holistic education</p>
+            </div>
+            <div>
+                <!-- icon -->
+                 <h3>Our Vision</h3>
+                 <p>providing holistic education, combining high academic standards (aiming for top national performance) with character development and social responsibility to empower students to achieve their destiny.</p>
+            </div>
+        </div>
+    </section>
+    <section class="shughuli">
+        <div>
+            <h2>Academic Performace (2000-2025)</h2>
+
+            <p><span>Performance Trend:</span> Our Acaademic performance has shown consistent improvement over the past 24 years, with pass rates increasing from 77.5% in 2000 to 98.5% in 2025. This remarkable growth reflects our commitment to educational excellence and continuous improvement.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Senior Staff</h2>
+        <p>Meet the dedicated leadership team committed to your educational success.</p>
+        <div class="container_mode">
+            <div class="mode-1">
+                <img src="" alt="">
+                <h4>P.M Kariuki</h4>
+                <h5>Principal</h5>
+                <p>Leading the school with 20 + years of educational leadership experience.</p>
+
+            <!-- email -->
+            </div>
+            <div class="mode-1">
+                <img src="" alt="">
+                <h4>P.M Kariuki</h4>
+                <h5>Deputy Principal</h5>
+                <p>Leading the school with 20 + years of educational leadership experience.</p>
+
+            <!-- email -->
+            </div>
+            
+        </div>
+    </section>
+
+    <section>
+        <h2>Our History</h2>
+        <div>
+            <p>Founded in 1974, Chania High School has been a cornerstone of education in the region for over 50 years. What began as a small institution with just 150 students has grown into a thriving educational community of over 1,200 students.</p>
+
+            <p>Throughout the decades, we have maintained our commitment to academic excellence while adapting to the changing needs of our students and society. Our facilities have expanded to include state-of-the-art laboratories, modern classrooms, comprehensive sports facilities, and a well-stocked library.</p>
+
+            <p>Today, Chania High School stands as a testament to the power of quality education, producing graduates who have gone on to excel in various fields including medicine, engineering, law, arts, and public service.</p>
+        </div>
+    </section>
     <table>
         <tbody>
             <tr>
                 <td>
                     <h4></h4>
-                    <a href="" style="color: blue;">Chania High School</a>
+                    <a href="">Chania High School</a>
                 </td>
             </tr>
             
@@ -35,21 +106,47 @@
                     <a href="">KCSE Performance Since 2000</a>
                 </td>
             </tr>
-            <tr>
+            <tr class="table-heading">
                 <td><h5>YEAR</h5></td>
                 <td><h5>A</h5></td>
                 <td><h5>A-</h5></td>
                 <td><h5>B+</h5></td>
                 <td><h5>B</h5></td>
                 <td><h5>B-</h5></td>
+                <td><h5>C+</h5></td>
+                <td><h5>C</h5></td>
+                <td><h5>C-</h5></td>
+                <td><h5>D+</h5></td>
+                <td><h5>D</h5></td>
+                <td><h5>D-</h5></td>
+                <td><h5>E</h5></td>
+                <td><h5>X</h5></td>
+                <td><h5>Y</h5></td>
+                <td><h5>Mean Points</h5></td>
+                <td><h5>Mean Grade</h5></td>
+                <td><h5>University</h5></td>
+                <td><h5>University%</h5></td>
             </tr>
             <tr>
                 <td>2000</td>
-                <td><h5>0</h5></td>
+                <td><h5>1</h5></td>
+                <td><h5>2</h5></td>
                 <td><h5>5</h5></td>
+                <td><h5>19</h5></td>
+                <td><h5>30</h5></td>
+                <td><h5>39</h5></td>
+                <td><h5>15</h5></td>
                 <td><h5>10</h5></td>
-                <td><h5>21</h5></td>
-                <td><h5>37</h5></td>
+                <td><h5>9</h5></td>
+                <td><h5>7</h5></td>
+                <td><h5>7</h5></td>
+                <td><h5>3</h5></td>
+                <td><h5>1</h5></td>
+                <td><h5>0</h5></td>
+                <td><h5>8.0</h5></td>
+                <td><h5>B</h5></td>
+                <td><h5>70</h5></td>
+                <td><h5>40</h5></td>
             </tr>
             <tr>
                 <td>2001</td>
@@ -91,12 +188,23 @@
                 <td><h5>21</h5></td>
                 <td><h5>37</h5></td>
             </tr>
+            <tr>
+                <td>2005</td>
+                <td><h5>0</h5></td>
+                <td><h5>5</h5></td>
+                <td><h5>10</h5></td>
+                <td><h5>21</h5></td>
+                <td><h5>37</h5></td>
+            </tr>
             
         </tbody>
     </table>
   </main>
   <footer>
-
+    <h2>Chania High School</h2>
+    Chania &copy; 2026 . All Rights Reserved.
+    <p>Designed by <a href="https://ngala.vercel.app">Ngala</a> Chania Alumni</p>
+    <!-- back to top icon -->
   </footer>
 </body>
 </html>

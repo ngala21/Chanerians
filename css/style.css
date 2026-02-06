@@ -1,15 +1,141 @@
-* {
+/*
+** A Totally Real Project by a total "Software Engineer"
+@ Author - ngala21
+**
+*/
 
+/* ===== Fonts ===== */
+
+/* ===== CSS Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
+
 
 :root {
+    --color-primary: maroon;
+    --color-secondary: ;
+    --color-success: ;
 
+    --container-width-lg: ;
+    --container-width-md: ;
+    --container-width-sm: ;
+
+    --transition: ;
+    --border-radius-default: ;
+    --border-radius-large: ;
 }
 
+/* ===== General Styles ===== */
+h2,
+h4 {
+    text-align: center;
+}
+
+
+/* ===== General Styles ===== */
+
+/* ================ SITE NAVIGATION ================ */
 nav {
-
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 5%;
+   background: var(--color-primary);
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);  
 }
 
-footer {
+.nav-logo {
+    height: 74px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.nav-logo img {
+    width: 5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #003366;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* ================ SITE NAVIGATION ================ */
+
+/* ================ SITE NAVIGATION ================ */
+main {
+    margin-top: 2rem;
+    height:80vh;
+}
+/* ================ SITE NAVIGATION ================ */
+
+.intro__container {
     
 }
+
+/* ================ STAFF SECTION ================ */
+
+/* ================ STAFF SECTION END ================ */
+
+/* ================ FOOTER SECTION ================ */
+footer {
+    height: 100vh;
+    background-color: maroon;
+    color: #003366;
+    height: 6rem;
+    font-weight: bold;
+    text-align: center;
+}
+/* ================ FOOTER SECTION ENDING ================ */
+
+/* --- HOME SECTION END --- */
+
+
+/* ================ ABOUT SECTION ================ */
+table {
+
+}
+
+th, td {
+    text-align: center;
+}
+
+/* ================ ABOUT SECTION ================ */
+
+/* ================ TABLE SECTION ================ */
+
+h4 {
+    color: blue; 
+    text-align: center; 
+    margin-left: auto; 
+    margin-right: auto;"
+}
+
+.table-heading {
+    background: green;
+}
+
+/* ================ TABLE SECTION END ================ */
+
+/* ================ ABOUT SECTION END ================ */
+
