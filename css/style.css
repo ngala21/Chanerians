@@ -19,9 +19,9 @@
 
 
 :root {
-    --color-primary: maroon;
-    --color-secondary: ;
-    --color-success: ;
+    --color-primary: #800000;
+    --color-secondary: #003366;
+    --color-success: #ffffff;
 
     --container-width-lg: ;
     --container-width-md: ;
@@ -38,6 +38,11 @@ h4 {
     text-align: center;
 }
 
+.pcenter {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 /* ===== General Styles ===== */
 
@@ -85,17 +90,281 @@ nav a:hover {
 /* ================ SITE NAVIGATION ================ */
 main {
     margin-top: 2rem;
-    height:80vh;
 }
 /* ================ SITE NAVIGATION ================ */
 
-.intro__container {
-    
+/* ================ HERO SECTION ================ */
+
+.hero {
+    height: 50vh;
+    background: linear-gradient(to right, #6d0d0d, #7b1616);
+    display: flex;
+    align-items: center;
+    color: white;
 }
 
-/* ================ STAFF SECTION ================ */
+.hero-content {
+    max-width: 600px;
+    margin-left: 120px;
+    color: white;
+}
 
-/* ================ STAFF SECTION END ================ */
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 26px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+
+.btn.primary {
+    background: var(--color-success);
+    color: var(--color-primary);
+    border: 3px solid white;
+}
+
+.btn.outline {
+    background-color: transparent;
+    border: 3px solid white;
+    color: var(--color-success);
+}
+
+/* ================ HERO SECTION ================ */
+
+/* ================ ACADEMIC SECTION ================ */
+.stats {
+    height: 30vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 60px 40px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.stat-item {
+    text-align: center;
+    width: 100px;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    background: #7b1616;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.stat-number {
+    font-size: 28px;
+    color: #7b1616;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ================ ACADEMIC SECTION  ================ */
+.academic-section {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f8f9fa;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    margin: 40px;
+    padding: 60px 20px;
+    /* max-width: 1200px; */
+}
+
+.program-card {
+    background: #fff;
+    padding: 50px 20px;
+    border-radius: 12px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #800000; 
+    transition: transform 0.3s ease;
+}
+
+.icon-box {
+    background-color: #800000;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.program-card h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.program-card p {
+    color: #777;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* ================ ACADEMIC SECTION END ================ */
+
+
+/* ================ NEWS SECTION ================ */
+.news-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.news-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header h2 {
+    font-size: 2.2rem;
+    color: #0c1e35;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #666;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.news-card {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* Meta info: Badge and Date */
+.card-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.badge {
+    color: white;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-sports { background-color: #630000; }
+.badge-academics { background-color: #630000; }
+.badge-events { background-color: #630000; }
+.badge-arts { background-color: #630000; }
+
+.date {
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.news-card h3 {
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.news-card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.read-more {
+    color: #630000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.action-footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.view-all-btn {
+    background-color: #630000;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+/* ================ NEWS SECTION END ================ */
 
 /* ================ FOOTER SECTION ================ */
 footer {
